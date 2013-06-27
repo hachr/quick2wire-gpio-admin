@@ -54,7 +54,7 @@ out/gpio-admin.1.gz: man/gpio-admin.1
 install: install-files
 	groupadd -f --system gpio
 	chgrp gpio $(DESTDIR)/bin/gpio-admin
-	chmod u=rwxs,g=rx,o= $(DESTDIR)/bin/gpio-admin
+	chmod u=rwxs,g=rx,o=rx $(DESTDIR)/bin/gpio-admin
 .PHONY: install
 
 install-files: all
